@@ -1,5 +1,5 @@
 # Industrial Magazine Template
-[DEMO]()
+[DEMO](https://zuzakowalska.github.io/industrial-web/)
 
 # USED IN PROJECT
   - HTML
