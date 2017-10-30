@@ -1,0 +1,83 @@
+@media screen and (max-width: 980px) {
+    header {
+        flex-direction: column;
+    }
+    .search {
+        width: 90%;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-wrapper {
+        width: 100%;
+    }
+    
+    #carousel-wrapper {
+        overflow: visible;
+        height: 100%;
+    }
+    
+    #carousel { 
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #carousel li {
+    margin: 0 0 3rem 0;
+    width: 100%;
+    }
+    
+    .container-full,
+    .container-half,
+    .inner-wrapper {
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 1rem;
+    }
+    
+    .wrapper-third {
+        display: block;
+    }
+    .badge {
+        margin-bottom: 3rem;
+    }
+    .container-full button,
+    .container-half button {
+        margin: 0 auto;
+    }
+    #container-subscribe {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    * {
+        font-size: 14px;
+    }
+    .logo {
+        width: 16rem;
+    }
+    h2,
+    p,
+    #container-beoplay {
+        text-align: center;
+    }
+    .container-full p,
+    .container-half p,
+    .container-third p,
+    #container-subscribe p {
+        font-size: 1.5rem;
+    }
+    #container-signature {
+        padding-bottom: 30px;
+    }
+    .email,
+    .btn-subscribe {
+        width: 100%;
+    }
+}

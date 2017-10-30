@@ -1,0 +1,350 @@
+@font-face {
+    font-family: 'hk_groteskregular';
+    src: url('../font/hkgrotesk-regular-webfont.woff2') format('woff2'), url('../font/hkgrotesk-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'league_spartanregular';
+    src: url('../font/leaguespartan-bold-webfont.woff2') format('woff2'), url('../font/leaguespartan-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    background-color: #272f45;
+}
+
+
+/*
+div {
+    border: 1px solid red;
+}
+*/
+
+.main-wrapper {
+    width: 85%;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 60px 0 55px 0;
+}
+
+.logo {
+    background: url(../img/logo.svg) no-repeat;
+    background-size: contain;
+    width: 18.75rem;
+    height: 73px;
+}
+
+.search {
+    border: none;
+    background: url("../img/search.png") left 0px top 7px no-repeat, transparent;
+    border-bottom: 3px solid #63757e;
+    height: 35px;
+    width: 175px;
+    box-sizing: content-box;
+    padding-left: 2rem;
+}
+
+input:focus {
+    outline: none;
+}
+
+input,
+input::placeholder {
+    font-family: 'hk_groteskregular', sans-serif;
+    font-size: 1.5rem;
+    color: #63757e;
+}
+
+.container {
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-family: "league_spartanregular", sans-serif;
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 0;
+    line-height: 5rem;
+}
+
+h2 {
+    font-family: "league_spartanregular", sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 0;
+    line-height: 3rem;
+}
+
+h3 {
+    font-family: "league_spartanregular", sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 2rem;
+    text-align: center;
+    margin: 0;
+}
+
+h4 {
+    font-family: 'hk_groteskregular', sans-serif;
+    font-size: 2rem;
+    color: #92a1a9;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container-full {
+    width: 100%;
+    height: 690px;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 5% 118px 3%;
+}
+
+.container-half {
+    width: 48%;
+    height: 520px;
+    display: inline-block;
+}
+
+#carousel-wrapper {
+    overflow: hidden;
+    white-space: nowrap;
+    border: 1px solid red;
+    height: 444px;
+}
+
+.carousel-single-slide {
+    display: inline-block;
+    width: 31%;
+    height: 100%;
+    border: 1px solid green;
+    margin: 0 1%;
+}
+
+/*
+#carousel {
+    border: 1px solid green;
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    left: 0;
+    position: absolute;
+    
+    
+}
+*/
+
+/*
+#carousel li {
+    position: relative;
+    display: inline-block;
+    position: relative;
+    float: left;
+    height: 444px;
+    margin: 0 1%;
+    padding: 0;
+    width: 30%;
+	transform: translateX(-10%);
+}
+*/
+
+.container-third {
+    height: 100%;
+    padding: 60px 0 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container p {
+    font-family: 'hk_groteskregular', sans-serif;
+    color: #fff;
+}
+
+.container-full p {
+    font-size: 2rem;
+    line-height: 2.1rem;
+}
+
+.container-half p {
+    font-size: 1.5rem;
+    line-height: 1.6rem;
+}
+
+.container-third p {
+    font-size: 1rem;
+    text-align: center;
+}
+
+#container-subscribe p {
+    font-family: 'hk_groteskregular', sans-serif;
+    font-size: 1.125rem;
+    color: #92a1a9;
+    text-align: center;
+}
+
+.inner-wrapper {
+    width: 40%;
+}
+
+button {
+    font-family: 'hk_groteskregular', sans-serif;
+    color: #fff;
+    border: 3px solid #eec9a2;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+@keyframes button-hover {
+    from {
+        background-color: transparent;
+    }
+    to {
+        background-color: #eec9a2;
+    }
+}
+
+button:hover {
+    animation: button-hover .5s forwards;
+}
+
+.container-full button {
+    width: 10rem;
+    height: 60px;
+    font-size: 24px;
+    margin-top: 30%;
+}
+
+.container-half button,
+.container-third button,
+.btn-subscribe {
+    font-family: 'league_spartanregular', sans-serif;
+    width: 7.5rem;
+    height: 40px;
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    letter-spacing: 3px;
+    margin-top: 30px;
+}
+
+.badge {
+    background: url("../img/kickstarter%20logo.png") center no-repeat;
+    width: 111px;
+    height: 115px;
+    float: right;
+}
+
+#container-gina {
+    background: url("../img/Gina.jpg") center no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+#container-beoplay {
+    background: url("../img/Beoplay.png") -110px -80px no-repeat, #60b8a3;
+    text-align: right;
+    padding: 0 3% 0 3%;
+}
+
+#container-leica {
+    float: right;
+    background: url("../img/Leica.png") right 0px no-repeat, #7778c6;
+    padding: 0 3% 0 3%;
+}
+
+#container-molekule,
+#container-molekule-copy {
+    background: url("../img/Molekule.png") center 265px no-repeat, #e97864;
+}
+
+#container-signature {
+    background: url("../img/P9%20Signature.png") center -75px no-repeat, #557581;
+    justify-content: flex-end;
+}
+
+#container-drii {
+    background: url("../img/DR-II%20product.png") center 250px no-repeat, #82c9d8;
+}
+
+#container-subscribe {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.email,
+.btn-subscribe {
+    width: 20rem;
+    height: 60px;
+    border: 3px solid #7f919b;
+    background-color: transparent;
+    margin: 50px auto 20px auto;
+    display: block;
+    text-align: center;
+}
+
+.email::placeholder {
+    color: #7f919b;
+    text-align: center;
+}
+
+.btn-subscribe {
+    border: 3px solid #82c9d8;
+    margin-top: 10px;
+}
+
+@keyframes subscribe-hover {
+    from {
+        background-color: transparent;
+    }
+    to {
+        background-color: #82c9d8;
+    }
+}
+
+.btn-subscribe:hover {
+    animation: subscribe-hover .5s forwards;
+}
+
+footer,
+footer a {
+    font-family: 'hk_groteskregular', sans-serif;
+    color: #7f919b;
+    text-align: center;
+    font-size: 1.125rem;
+    margin-bottom: 70px;
+    text-decoration: none;
+}
+
+footer ul {
+    margin-top: 100px;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    font-size: 1.5rem;
+}
